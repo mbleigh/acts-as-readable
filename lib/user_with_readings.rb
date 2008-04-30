@@ -1,3 +1,3 @@
-class User < ActiveRecord::Base
+User.class_eval do
   has_many :readings
 end
