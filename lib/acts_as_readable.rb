@@ -27,7 +27,7 @@ module ActiveRecord
       
       module InstanceMethods
         def read_by!(user)
-          readings << Reading.new(:user => user)
+          readings << Reading.new(:user_id => user.id)
         end
         
         def unread_by!(user)
